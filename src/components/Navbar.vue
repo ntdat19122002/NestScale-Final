@@ -1,14 +1,17 @@
 <template>
   <div class="navbar">
-    <div class="nav-item">
+    <router-link :to="{name:'Dashboard'}" class="nav-item">
       <img src="" alt="">
-    </div>
-    <div class="nav-item">
+      Dashboard
+    </router-link>
+    <router-link :to="{name:'AddProduct'}" class="nav-item">
       <img src="" alt="">
-    </div>
-    <div class="nav-item">
+      Product Management
+    </router-link>
+    <router-link :to="{name:'Website'}" class="nav-item">
       <img src="" alt="">
-    </div>
+      website
+    </router-link>
   </div>
 </template>
 
@@ -18,7 +21,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
   .navbar{
       width: 276px;
       height: 100vh;
@@ -28,7 +31,7 @@ export default {
   .nav-item{
     margin-bottom: 16px;
   }
-  .nav-item:nth-of-type(1){
+  .nav-item.router-link-active{
     background: white;
   }
   .nav-item img{
@@ -36,5 +39,9 @@ export default {
     width: 32px;
     border-radius: 50%;
     background: #d9d9d9;
+  }
+  a{
+    display: block;
+    color: black
   }
 </style>

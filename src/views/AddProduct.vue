@@ -125,12 +125,12 @@
 
           <!-- Item -->
           <div class="product-list-item-wrapper">
-            <div class="product-list-item product-list-row" v-for="n in 5" :key="n">
+            <div class="product-list-item product-list-row" v-for="n in 20" :key="n">
               <div class="check-box">
                 <input type="checkbox">
               </div>
               <div class="image">
-                <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
+                <img src="../assets/images/widgets/product.png" alt="">
               </div>
               <div class="name">
                 Product Name
@@ -241,12 +241,7 @@ export default {
   .search-product input{
     width: 100%;
     height: 40px;
-    left: 316px;
-    top: 293px;
     padding-left: 38px;
-    background: #FFFFFF;
-    border: 1px solid #E2E2E2;
-    border-radius: 6px;
   }
 
   /* Product List */
@@ -267,8 +262,8 @@ export default {
     border-bottom: 1px solid #E2E2E2;
   }
   .product-list-item-wrapper{
-    height: 190px;
-    overflow: scroll;
+    height: 174px;
+    overflow-y: scroll;
   }
   .product-list-item div{
     font-weight: 400;
