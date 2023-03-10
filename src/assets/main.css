@@ -1,0 +1,32 @@
+*{
+    font-size: 14px;
+    font-family: "Inter";
+    color: #000000;
+    overflow: hidden;
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+
+::-webkit-scrollbar{
+    width: 6px;
+    padding: 0;
+}
+::-webkit-scrollbar-track {
+    background: white; 
+    padding: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #BFBFBF;
+    border-radius: 5px;
+    padding: 0;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555;
+}
