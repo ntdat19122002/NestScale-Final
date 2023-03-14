@@ -44,7 +44,7 @@
           <!-- Header -->
           <div class="product-list-header product-list-row">
             <div class="check-box">
-              <input type="checkbox">
+              <input @change="toggleCheckbox" v-model="check_all" type="checkbox">
             </div>
             <div class="image">
               Image
@@ -66,7 +66,7 @@
           <div class="product-list-item-wrapper">
             <div class="product-list-item product-list-row" v-for="n in 20" :key="n">
               <div class="check-box">
-                <input type="checkbox">
+                <input class="checkbox-item" type="checkbox">
               </div>
               <div class="image">
                 <img src="../assets/images/widgets/product.png" alt="">
@@ -153,13 +153,23 @@
 </template>
 
 <script>
+import { ref } from 'vue';
 import NavStatus from '../components/NavStatus.vue';
 export default {
   components: { NavStatus },
   setup(){
-    const isLoading = true;
+    const isLoading = ref(true);
+    const check_all = ref(false)
 
-    return {isLoading}
+    const toggleCheckbox = () => {
+      console.log(document.getElementsByClassName('checkbox-item')[0].value);
+      for(const check_item of document.getElementsByClassName('checkbox-item')){
+        check_item.checked = check_all.value
+      }
+
+    }
+
+    return {isLoading, check_all,toggleCheckbox}
   }
 }
 </script>

@@ -18,7 +18,19 @@
         </div>
         <div class="setting-content">
           <div class="setting-config">
-            <div class="config-type">
+            <div class="config">
+              <div>
+                <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
+                <span>General Configuration</span> 
+              </div>
+              <div class="config-content">
+                <div class="config-text">
+                  <div>Widget Title</div>
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+            </div>
+            <div class="config">
               <div>
                 <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
                 <span>General Configuration</span> 
