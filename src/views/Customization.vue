@@ -13,27 +13,40 @@
     <!-- Setting -->
     <div class="customize-setting">
         <div class="title">
-            Settings
-            <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
+            Settings     <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
         </div>
         <div class="setting-content">
           <div class="setting-config">
             <div class="config">
-              <div>
+              <div class="config-title">
                 <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
-                <span>General Configuration</span> 
+                General Configuration
               </div>
               <div class="config-content">
                 <div class="config-text">
                   <div>Widget Title</div>
                   <input type="text" name="" id="">
                 </div>
+                <div class="flex">
+                  <div class="choose-color">
+                    <div class="choose-color-title">
+                      Title Color
+                    </div>
+                  </div>
+                  <div class="choose-fontsize">
+                    <div class="choose-fontsize-title">
+                      Font Size
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="config">
-              <div>
+              <div class="config-title">
                 <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
-                <span>General Configuration</span> 
+                <div>
+                  General Configuration
+                </div>
               </div>
               <div class="config-content">
                 <div class="config-text">
@@ -45,7 +58,10 @@
           </div>
           <!-- Preview -->
           <div class="preview">
-            <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt=""> Preview
+            <img src="../assets/images/widgets/ask.png" class="product-list-ask" alt="">
+            <div>
+              Preview
+            </div>
           </div>
         </div>
     </div>
@@ -74,6 +90,28 @@ export default {
   }
   .setting-content>div{
     width: 50%;
-    margin: 37px 29px;
+    margin: 29px;
+  }
+  .config-title, .preview{
+    display: flex;
+    align-items: center;
+  }
+  .config-title img, .preview img{
+    margin-right: 10px;
+  }
+
+  .config-content{
+    padding: 26px;
+  }
+
+  .config-text>div{
+    margin-bottom: 9px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .config-text>input{
+    width: 80%;
+    margin-bottom: 18px;
   }
 </style>
